@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 120PX auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-book {
+  margin: 20px 0;
+  position: relative;
+  width: 260px;
+  height: 350px;
+  border: 10px;
+  background-color: #effffe;
+  box-shadow: 1px 1px 12px #000;
+  transform: preserve-3d;
+  perspective: 2000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.card-cover {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  /* background-image: url(./partnership.jpg); */
+  background-size: cover;
+  transform-origin: 0;
+  /* border-radius: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all .1s;
+}
+
+.card-book:hover .card-cover {
+  transition: all 1s;
+  transform: rotateY(95deg);
+}
+
+.content {
+  color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  transition: all .1s;
+}
+
+
+.content h1 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.content p {
+  font-size: 13px;
+}
+
+.content button {
+  margin: 15px 0;
+  border: none;
+  padding: 10px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 7px;
+  transition: all .5s;
+}
+
+.content button:hover {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: #000;
+  transition: all .5s;
+
+}
